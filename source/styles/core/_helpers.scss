@@ -1,0 +1,30 @@
+// Helper classes
+
+// Disable pointer
+.pe-none {
+  pointer-events: none;
+}
+
+// Text and background color generator
+@each $color, $value in $css-colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+
+  .color-#{$color} {
+    color: $value;
+  }
+}
+
+video.fullscreen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+  background: black;
+}

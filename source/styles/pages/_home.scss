@@ -1,0 +1,27 @@
+// This is an example file.
+.description {
+  position: fixed;
+  bottom: $based_spacing;
+  left: $based_spacing;
+  h1 {
+    margin: 0;
+  }
+}
+.contact {
+  position: fixed;
+  bottom: $based_spacing;
+  right: $based_spacing;
+}
+.logo {
+  margin: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -20px;
+  svg {
+    width: 100px;
+    height: auto;
+  }
+}

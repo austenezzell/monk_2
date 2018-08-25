@@ -1,0 +1,36 @@
+// Font settings
+
+@mixin font {
+  // sass-lint:disable-block indentation
+  $_path: '/assets/fonts/neutra/';
+  $font-regular: 'NeutraText-Book';
+  $font-bold: 'NeutraText-Bold';
+
+  @font-face {
+    font-family: 'neutra';
+    src: url('#{$_path}#{$font-regular}.woff') format('woff'),
+      url('#{$_path}#{$font-regular}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'neutra bold';
+    src: url('#{$_path}#{$font-bold}.woff') format('woff'),
+      url('#{$_path}#{$font-bold}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@mixin regular-font {
+  font-family: 'neutra', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin bold-font {
+  font-family: 'neutra', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}

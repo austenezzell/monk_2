@@ -1,0 +1,47 @@
+// Base application styles
+@include font;
+@include root;
+
+body {
+  @include regular-font;
+  margin: 0;
+  color: white;
+  line-height: $line-height;
+  background: $color-primary;
+}
+
+blockquote,
+pre,
+table,
+ul,
+ol,
+dl {
+  margin-top: $spacing;
+  margin-bottom: $spacing;
+}
+
+ol,
+ul {
+  list-style: initial;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-decoration: underline;
+
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+b,
+strong {
+  @include bold-font;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid $color-secondary;
+}
